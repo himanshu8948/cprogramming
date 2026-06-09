@@ -14,7 +14,7 @@ s = sin(angle);
 c = cos(angle);
 t = tan(angle);
 
-printf("these are the given below trigonometric ratios of the angle:\n");
+printf("these are the given below trigonometric ratios of the angle:\ngcc");
 printf("sin = %lf cos = %lf tan = %lf \n ",s,c,t);
 
 return 0;
