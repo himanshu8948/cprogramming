@@ -15,7 +15,7 @@ if (a % 4 == 0){
         printf("the input year is a leap year !:");
     }
     else {
-        printf("the inpur year is not a leap year !");
+        printf("the input year is not a leap year !");
     }
 }
     else{
