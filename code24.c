@@ -15,7 +15,7 @@ else if(6 <= days && days <=10){
 printf("Your fine is 1 Rs for 6-10 days duration !:");
 }
 else if(10 < days){
-
+10
 printf("Your fine is 5 Rs for above 10 days !");
 }
 else if(days > 30){
