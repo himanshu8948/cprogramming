@@ -1,3 +1,5 @@
+//pattern to print square stars
+
 #include<Stdio.h>
 
 int main(){
