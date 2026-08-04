@@ -2,24 +2,27 @@
 
 #include<Stdio.h>
 
-int n,reverse,digit;
-int sum = 0;
+unsigned int n,digit;
+unsigned int reverse = 0;
 
 int main(){
 
     printf("Enter the no. for which reverse of digit is required :");
-    scanf("%d",&n);
+    scanf("%u",&n);
 
-if(n <0){
-    printf("Invalid input");
- }
 
-while(n != 0)
-    digit = n%2;
-    sum = sum +'digit';
-    n = n/2;  
 
-printf("%d",sum);
+while(n > 0){
+   
+    digit = n & 1;
+    reverse <<=1 ;
+    reverse |= digit ;
+    n >>= 1;
+}
+
+  
+
+printf("%u",reverse);
 
 return 0;
 }
