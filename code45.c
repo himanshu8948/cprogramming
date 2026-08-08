@@ -1,21 +1,22 @@
-#include<stdio.h>//Armstrong no.
+#include<stdio.h>//fibanacci series 
 int main(){
 
-int num;
+int num,nextterm ;
 int num1 = 0;
 int num2 = 1;
 
 printf("Enter the no. of times armstrong no. should be printed ");
 scanf("%d",&num);
 
-printf("%d%d",num1,num2);
-while(num != 0){
 
-    num1 = num1+num2;
-    num2 = num1+num2;
+while(num > 0){
 
     printf("%d",num1);
-    printf("%d",num2);
+    nextterm = num1+num2;
+
+    num1 = num2;
+    num2 = nextterm ;
+    
 num--;
 }
 return 0;
