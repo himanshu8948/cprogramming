@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include<stdio.h>//here in this code i have used the euclidenien algorithm of finding the gcd and lcm
 int main()
 
 {
@@ -9,7 +9,7 @@ int main()
     printf("input second no >> ");
     scanf("%d",&NUM2);
 
-    int a = NUM1;
+    int a = NUM1;             //used the formula to find LCM from GCD = AxB/GCD 
     int b = NUM2;
     while(b !=0){
 
