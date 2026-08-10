@@ -7,7 +7,7 @@ void printtillN(int n){
         return;
     }
     printtillN(n-1);
-    printf("%d",n);
+    printf("%d ",n);
 }
 
    
