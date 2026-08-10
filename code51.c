@@ -8,7 +8,7 @@ void printGFG(int n){
     }
     
     printGFG(n-1);
-    printf("%s","GFG");
+    printf("%s   ","GFG");
 
 }
 
