@@ -1,51 +1,41 @@
 #include<stdio.h>
-
-int n;
-int a = 0;
-int b = 1;
-int fibo[1000];
-
-int index1 = 0;
-
-void  printfibo(int n){
-
-    
-
-    if(n == 0){
-
-         return ;
-                      }
-
-    fibo[index1] = a;
-    index1++;
-    fibo[index1] = b;
-    index1++;
-    int a1 = a;
-    a = a+b;
-    b = b+a;
-
-    
-    n--;
-    printfibo(n);
-    if(index1 > -1){
-    
-    printf("%d",fibo[index1]);
-    index1 --;
-    }
-        
-}
-
+#include<stdlib.h>
 
 
 int main(){
 
- 
-    printf("Enter the no. to print the fibonacci series >>");
+int size,key,k;
 
-    scanf("%d",&n);
+printf("Enter the size of array >>");
+scanf("%d",&size);
+
+int *sort = (int*)malloc(size*sizeof(int));
+
+for(int i = 0; i <size ; i++){
+
+    printf("Enter each element of the array ");
+    scanf("%d",&sort[i]);
+}
+
+for(int j = 1; j < size; j++){
     
-    printfibo(n);
+        key = sort[j];
+        k = j-1;
 
-    return 0;
+        while(k >= 0 && sort[k] > key){
 
+        
+            sort[k +1] = sort[k];
+
+            k -- ;
+        }
+        sort[k] = key;
+    }
+}
+
+for(int l = 0; l < size; l++){
+    printf("%d",sort[l]);
+}
+
+return 0;
 }
