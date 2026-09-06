@@ -74,7 +74,7 @@ void mergesort(int arr[],int left,int right){
 
 int main(){
 
-    int n,sorted ;
+    int n ;
 
     printf("Enter the no. of elements in the array >>>");
 
