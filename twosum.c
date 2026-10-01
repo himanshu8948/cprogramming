@@ -46,7 +46,12 @@ int main(){
     
     int *answer = twosum(num,numsize,key,&size);
 
-    printf("This is the address of the elements which gives together the sum >>>key >>> %d ,%d",answer[0],answer[1]);
+    if(answer != NULL){
 
+    printf("This is the address of the elements which gives together the sum >>>key >>> %d ,%d",answer[0],answer[1]);
+    }
+    else{
+    printf("No two elements gives the output equal to >> %d",key);
+    }
     return 0;
 }
