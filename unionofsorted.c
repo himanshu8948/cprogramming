@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int unionsorted(int arr1[],int arr2[],int arr3[] , int n , int m,int s  ){
+int unionsorted(int arr1[],int arr2[],int arr3[] , int n , int m  ){
 
     int i = 0;
     int j = 0;
@@ -60,7 +60,7 @@ int main (){
     scanf("%d",&m);
 
     
-   int k = m+m;
+   int k = m+n;
 
     int*arr1 = (int*)malloc(n*sizeof(int));
     int*arr2 = (int*)malloc(m*sizeof(int));
@@ -81,7 +81,7 @@ int main (){
     }
 
 
-   int unique =  unionsorted(arr1,arr2,arr3,n,m,k);
+   int unique =  unionsorted(arr1,arr2,arr3,n,m);
 
     printf("This is union of two sorted array >>");
 
